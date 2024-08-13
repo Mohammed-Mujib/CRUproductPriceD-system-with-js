@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD system</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="crud_box py-5 mx-auto w-50 px-3 shadow my-5 rounded-2">
+            <h1 class="text-center">CRUproductPriceD system</h1>
+            <form action="">
+                <div class="form-groub d-flex flex-column">
+
+                    <label for="productName" class="form-label">Product Name</label>
+                    <input type="text" class="form-control" id="productName">
+
+                    <label for="productCategory"  class="form-label">Product Category</label>
+                    <input type="text" id="productCategory" class="form-control">
+
+                    <label for="productPrice" class="form-label">Product Price</label>
+                    <input type="text" id="productPrice" class="form-control">
+
+                    <label for="productAmount" class="form-label">Product Amount</label>
+                    <input type="text" id="productAmount" class="form-control">
+
+                    <label for="productDiscription" class="form-label">Product Discription</label>
+                    <textarea name="" id="productDiscription" class="form-control"></textarea>
+
+                    <div class="buttons pt-2">
+                        <button type="button" class="btn btn-outline-info " id="update" onclick="addProduct()">Add product</button>
+                        <button type="button" class="btn btn-outline-info " id="clear_b">Clear</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <input type="search" name="" id="search" class="form-control w-25 mx-auto shadow" placeholder="search ... " >
+
+        <table class=" table mt-5 table-striped shadow">
+            <thead class="table-dark">
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Discription</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+        
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/my.js"></script>
+</body>
+</html>
